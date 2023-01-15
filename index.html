@@ -9,6 +9,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="calculator.js"></script>
+    <script src="display.js"></script>
     <script src="index.js" defer></script>
 </head>
 
@@ -16,67 +17,68 @@
 
     <!-- Contenerdor principal -->
     <main class="cont-general min-flex">
+        <!-- Texto y calculadora -->
         <div class="container">
-            <!-- Texto y calculadora -->
             <div class="row ">
 
                 <!-- Descripción -->
-                <div class="cont-descripcion bg-secondary col-12 col-sm-3">
-                    <h2>Calculadora</h2>
-                    <p>Realización de una calculadora utilizando:
-                    <ul>
-                        <ol>HTML</ol>
-                        <ol>CSS</ol>
-                        <ol>Bootstrap</ol>
-                        <ol>JavaScript</ol>
-                    </ul>
-                    </p>
+                <div class="cont-descripcion col-12 col-sm-3 bg-secondary min-flex">
+                    <section>
+                      <h2>Calculadora</h2>
+                        <p>Realización de una calculadora utilizando:                           
+                            <ul>
+                                <ol>HTML</ol>
+                                <ol>CSS</ol>
+                                <ol>Bootstrap</ol>
+                                <ol>JavaScript</ol>
+                            </ul>
+                        </p>  
+                    </section>
                 </div>
 
                 <!-- Calculadora -->
-                <div class="cont-calculadora bg-primary col-12 col-sm-9 min-flex">
-                    <div class="cont-display bg-secondary col-8 border p-2 m-3">
+                <div class="cont-calculadora col-12 col-sm-9 bg-primary min-flex">
+                    <div class="cont-display col-8 bg-secondary border p-2 m-3">
 
                         <!-- Resultado -->
                         <div class="row_valores bg-dark text-white p-3 my-3">
-                            <div id="valor-anterior">100 +</div>
-                            <div id="valor-actual">10</div>
+                            <div id="valor-anterior"></div>
+                            <div id="valor-actual"></div>
                         </div>
 
                         <!-- Números y operadores -->
                         <div class="row_tablero min-flex">
-                            <button class="btn btn-dark col-2 operador" type="button">C</button>
-                            <button class="btn btn-dark col-2 operador" type="button">&larr;</button>
-                            <button class="btn btn btn-dark col-2 operador" type="button" value="dividir">/</button>
-                            <button class="btn btn btn-dark col-2 operador" type="button" value="multiplicar">x</button>
+                            <button type="button" class="btn btn-dark col-2 operador" >C</button>
+                            <button type="button" class="btn btn-dark col-2 operador" >&larr;</button>
+                            <button type="button" class="btn btn btn-dark col-2 operador" value="procentaje">%</button>
+                            <button type="button" class="btn btn btn-dark col-2 operador" value="dividir">/</button>
                         </div>
 
                         <div class="row_tablero min-flex">
-                            <button class="btn btn btn-light col-2 numero" type="button">7</button>
-                            <button class="btn btn btn-light col-2 numero" type="button">8</button>
-                            <button class="btn btn btn-light col-2 numero" type="button">9</button>
-                            <button class="btn btn-dark col-2 operador" type="button" value="restar">-</button>
+                            <button type="button" class="btn btn btn-light col-2 numero" >7</button>
+                            <button type="button" class="btn btn btn-light col-2 numero" >8</button>
+                            <button type="button" class="btn btn btn-light col-2 numero" >9</button>
+                            <button type="button" class="btn btn-dark col-2 operador" value="multiplicar">x</button>
                         </div>
 
                         <div class="row_tablero min-flex">
-                            <button class="btn btn-light col-2 numero" type="button">6</button>
-                            <button class="btn btn-light col-2 numero" type="button">5</button>
-                            <button class="btn btn-light col-2 numero" type="button">4</button>
-                            <button class="btn btn-dark col-2 operador" type="button" value="sumar">+</button>
+                            <button type="button" class="btn btn-light col-2 numero" >6</button>
+                            <button type="button" class="btn btn-light col-2 numero" >5</button>
+                            <button type="button" class="btn btn-light col-2 numero" >4</button>
+                            <button type="button" class="btn btn-dark col-2 operador" value="sumar">+</button>
                         </div>
 
                         <div class="row_tablero min-flex">
                             <button class="btn btn-light col-2 numero" type="button">1</button>
                             <button class="btn btn-light col-2 numero" type="button">2</button>
                             <button class="btn btn-light col-2 numero" type="button">3</button> 
-                            <button class="btn btn-dark col-2 operador" type="button" value="igual">=</button> 
+                            <button class="btn btn-dark col-2 operador" type="button" value="igual">-</button> 
                         </div>
 
                         <div class="row_tablero min-flex">
-                            <button class="btn btn-light col-2 numero" type="button">.</button>
-                            <button class="btn btn-light col-2 numero" type="button">0</button>
-                            <button class="btn btn-light col-2 operador" type="button" value="porcentaje">%</button>
-                            <button class="btn col-2"></button>
+                            <button type="button" class="btn btn-light col-2 numero" >.</button>
+                            <button type="button" class="btn btn-light col-2 numero" >0</button>
+                            <button type="button" class="btn btn-light col-4 operador"  value="igual">=</button>
                         </div>
 
                     </div>
@@ -87,9 +89,9 @@
 
 
     <!-- Footer -->
-    <footer class="container bg-secondary">
+    <footer class="cont-footer bg-secondary min-flex">
        
-       <div class="row col-12 mt-2">
+       <div class="row col-12">
          <p>Hecho por &copy Jessica García</p>  
        </div>
        
