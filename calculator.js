@@ -6,9 +6,10 @@ class Calculator {
     }
 }
 
-const calculadora = new Calculator();
+/* const calculadora = new Calculator(); */
 
-console.log(calculadora.basic_operar("2", "5", "+"));
+/* console.log(calculadora.basic_operar("2", "5", "+"));
 console.log(calculadora.basic_operar("2", "5", "-"));
 console.log(calculadora.basic_operar("2", "5", "*"));
-console.log(calculadora.basic_operar("2", "5", "/"));
+console.log(calculadora.basic_operar("2", "5", "/")); */
+
