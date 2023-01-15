@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Contenerdor principal -->
+    <main class="cont-general min-flex">
+        <div class="container">
+            <!-- Texto y calculadora -->
+            <div class="row ">
+
+                <!-- Descripción -->
+                <div class="cont-descripcion bg-secondary col-12 col-sm-3">
+                    <h2>Calculadora</h2>
+                    <p>Realización de una calculadora utilizando:
+                    <ul>
+                        <ol>HTML</ol>
+                        <ol>CSS</ol>
+                        <ol>Bootstrap</ol>
+                        <ol>JavaScript</ol>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Calculadora -->
+                <div class="cont-calculadora bg-primary col-12 col-sm-9 min-flex">
+                    <div class="cont-display bg-secondary col-8 border p-2 m-3">
+
+                        <!-- Resultado -->
+                        <div class="row_valores bg-dark text-white p-3 my-3">
+                            <div id="valor-anterior">100 +</div>
+                            <div id="valor-actual">10</div>
+                        </div>
+
+                        <!-- Números y operadores -->
+                        <div class="row_tablero min-flex">
+                            <button class="btn btn-dark col-2 operador" type="button">C</button>
+                            <button class="btn btn-dark col-2 operador" type="button">&larr;</button>
+                            <button class="btn btn btn-dark col-2 operador" type="button" value="dividir">/</button>
+                            <button class="btn btn btn-dark col-2 operador" type="button" value="multiplicar">x</button>
+                        </div>
+
+                        <div class="row_tablero min-flex">
+                            <button class="btn btn btn-light col-2 numero" type="button">7</button>
+                            <button class="btn btn btn-light col-2 numero" type="button">8</button>
+                            <button class="btn btn btn-light col-2 numero" type="button">9</button>
+                            <button class="btn btn-dark col-2 operador" type="button" value="restar">-</button>
+                        </div>
+
+                        <div class="row_tablero min-flex">
+                            <button class="btn btn-light col-2 numero" type="button">6</button>
+                            <button class="btn btn-light col-2 numero" type="button">5</button>
+                            <button class="btn btn-light col-2 numero" type="button">4</button>
+                            <button class="btn btn-dark col-2 operador" type="button" value="sumar">+</button>
+                        </div>
+
+                        <div class="row_tablero min-flex">
+                            <button class="btn btn-light col-2 numero" type="button">1</button>
+                            <button class="btn btn-light col-2 numero" type="button">2</button>
+                            <button class="btn btn-light col-2 numero" type="button">3</button> 
+                            <button class="btn btn-dark col-2 operador" type="button" value="igual">=</button> 
+                        </div>
+
+                        <div class="row_tablero min-flex">
+                            <button class="btn btn-light col-2 numero" type="button">.</button>
+                            <button class="btn btn-light col-2 numero" type="button">0</button>
+                            <button class="btn btn-light col-2 operador" type="button" value="porcentaje">%</button>
+                            <button class="btn col-2"></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="container bg-secondary">
+       
+       <div class="row col-12 mt-2">
+         <p>Hecho por &copy Jessica García</p>  
+       </div>
+       
+    </footer>
+
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

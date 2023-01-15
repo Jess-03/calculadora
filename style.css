@@ -1,0 +1,42 @@
+.min-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* div {
+    border: 2px solid rgb(204, 134, 68);
+} */
+
+.btn {
+    margin: 4px;
+    box-shadow: 0px 2px 0px 1px rgba(15, 15, 15, 0.507);
+}
+
+.cont-display {
+    min-width: 250px;
+    border-radius: 32px;
+    box-shadow: 0px 3px 0px 3px rgba(15, 15, 15, 0.507);
+}
+.row_valores {
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 5px rgba(15, 15, 15, 0.507);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+#valor-anterior {
+    color: gray;
+}
+
+.cont-general{
+    height: 100vh;
+}
+
+@media screen and(max-width:800px) {
+    .cont-general{
+        height: 100%;
+    }
+}
