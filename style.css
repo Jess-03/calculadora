@@ -1,52 +1,94 @@
-.min-flex {
+.min-flex{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cont-general {
-    background-color: blueviolet;
+/* Contenedor principal */
+.cont-general{
+    height: 100vh;
+    background-color: whitesmoke;
 }
 
-/* div {
-    border: 2px solid rgb(204, 134, 68);
-} */
-
-.section{
-    padding-top: 50px;
-    padding-right: 20px;
+/* Contenido */
+.cont-descripcion {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.btn {
-    margin: 4px;
-    box-shadow: 0px 2px 0px 1px rgba(15, 15, 15, 0.507);
+.cont_ca {
+    border-left: 2px solid lightslategray;
 }
 
-.cont-display {
+.calculadora{
     min-width: 250px;
     border-radius: 32px;
-    box-shadow: 0px 3px 0px 3px rgba(15, 15, 15, 0.507);
+    /* box-shadow: inset -4px -4px 7px 3px #02020c7e; */
+    box-shadow: inset -4px -4px 7px 3px rgb(0 0 0 / 38%);
+    background-color:rgb(150 167 161) ;
+    /* rgb(89, 123, 146) */
+    font-family: 'Titillium Web', sans-serif;
 }
-.row_valores {
+
+/* Pantalla de resultado */
+.display{
     border-radius: 25px;
-    box-shadow: 0px 0px 0px 5px rgba(15, 15, 15, 0.507);
+    box-shadow: -1px 0px 2px 6px rgb(0 0 0 / 23%);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     overflow: hidden;
-    height: 80px;
+    height: 70px;
+    padding-top: 7px;
+    padding-right: 20px;
+    font-size: 17px;
 }
 
-#valor-anterior {
-    color: gray;
+#valor-anterior{
+    color: rgb(255, 251, 200);
+    font-size: 20px;
 }
 
-.cont-general{
-    height: 100vh;
+/* Botones */
+.btn{
+    margin: 4px;
+    box-shadow: 0px 2px 3px 1px #18181a7e;
+    border-radius: 60px;
+    border-color: bisque;
+    font-size: 20px;
 }
 
-@media screen and(max-width:800px) {
+.btn-num {
+    color: wheat;    
+}
+
+.btn-num:hover { 
+    background-color: rgb(247, 245, 238);
+    /* background-color: rgb(95, 114, 107); */
+    border-color: #3B454E;
+}
+
+.btn-dark{
+    background-color: #dddcb6;
+    color: #3B454E;
+}
+
+/* Footer */
+footer {
+    text-align:left;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+
+
+/* @media screen and (max-width:800px) {
     .cont-general{
         height: 100%;
     }
-}
+} */
+
+
+
+
+
