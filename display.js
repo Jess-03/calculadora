@@ -15,6 +15,7 @@ class Display{
       }
    }
 
+   //Evita que se añada otro punto cuando ya detecto que hay uno
    addNumber(numero){
       if (numero === '.' && this.valorActual.includes('.')) return
       this.valorActual = this.valorActual.toString() + numero.toString();

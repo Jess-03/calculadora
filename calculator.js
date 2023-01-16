@@ -11,6 +11,8 @@ class Calculator {
     }
 }
 
+//Pruebas
+
 /* const calculadora = new Calculator(); */
 
 /* console.log(calculadora.basic_operar("2", "5", "+"));

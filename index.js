@@ -23,6 +23,6 @@ botonesOperador.forEach(boton=>{
 });
 
 
-
+//Ejemplo
 //const calculadora = new Calculator();
 //console.log(calculadora.basic_operar("5", "2", "+"));
