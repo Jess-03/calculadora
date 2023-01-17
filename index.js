@@ -10,15 +10,21 @@ const botonesOperador = document.querySelectorAll('.operador');
 //Acción de botones
 const display = new Display(displayValorAnterior, displayValorActual);
 
-botonesNumero.forEach(boton=>{
-    boton.addEventListener('click',()=>{
-     display.addNumber(boton.innerHTML);
+//Eventos
+
+/* Cuando de clic en un número lo va a procesar, va a tomar el número que está en el HTML y lo va a mostrar en la pantalla. */
+
+botonesNumero.forEach(boton => {
+    boton.addEventListener('click', () => {
+        display.addNumber(boton.innerHTML);
     });
 });
 
-botonesOperador.forEach(boton=>{
-    boton.addEventListener('click', ()=>{
-        display.computar(boton.value);
+
+/* Cuando de clic a un operador va a agregar el operador a un lado del número */
+botonesOperador.forEach(boton => {
+    boton.addEventListener('click', () => {
+        display.computar(boton.value); // muestra la operacion en la pantalla
     });
 });
 
