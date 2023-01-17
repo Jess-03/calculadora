@@ -44,8 +44,8 @@ class Display {
 
    //Hacer operaciones y obtener resultado
    computar(tipo) {
-         /*  Si presiono el botón = imprimirá el resultado, pero si oprimo otro botón, 
-         proseguirá con la función de la operación.
+      /* Si presiono el botón = imprimirá el resultado, pero si oprimo otro botón, 
+      proseguirá con la función de la operación.
       */
       this.operador !== 'igual' && this.calcular(this.verificador);
       this.operador = tipo;
@@ -66,7 +66,7 @@ class Display {
    calcular(x) {
       this.funcion = x;
       /* Si los valores(anterior y actual) no estan vacios, entonces que realice la operacion 
-       Si uno está vacío no va a hacer la operación; ambos valores deben tener un número para que se realice la función */
+      Si uno está vacío no va a hacer la operación; ambos valores deben tener un número para que se realice la función */
       if ((this.valorAnterior != '') && (this.valorActual != '')) {
          this.valorActual = this.calculadora[this.funcion](this.valorAnterior, this.valorActual, this.operacion);
       }                                 // Por ejemplo:           10                   5               +
